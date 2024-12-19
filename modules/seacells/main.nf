@@ -1,5 +1,5 @@
 process SEACELLS {
-    label 'process_medium'
+    label 'process_high_memory'
     conda "/usersoftware/chanj3/SEACells"
     publishDir "${params.outdir}/rna_seacells/", mode: 'copy'
     cache 'lenient'

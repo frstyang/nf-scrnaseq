@@ -1,5 +1,5 @@
 process SCRAN {
-    label 'process_medium'
+    label 'process_high_memory'
     container 'library://mamie_wang/nf-scrnaseq/scran.sif:latest'
     publishDir "${params.outdir}/rna_scran/", mode: 'copy'
     cache 'lenient'

@@ -1,5 +1,5 @@
 process REPORT {
-    label 'process_medium'
+    label 'process_high_memory'
     container "library://mamie_wang/nf-scrnaseq/postprocessing.sif:latest"
     publishDir "${params.outdir}/rna_report/", mode: 'copy'
     cache 'lenient'
